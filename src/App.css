@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./Fonts/JetBrainsMono-VariableFont_wght.ttf");
+}
+
+@layer components {
+  .img {
+    @apply w-[180px] cursor-pointer;
+  }
+  .Navbar {
+    @apply bg-dark w-full h-[60px] mt-4  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex items-center justify-between px-4 rounded-xl;
+  }
+  .Navbar-Menu {
+    @apply w-[46px] h-[45px] flex items-center justify-center rounded-full bg-primary hover:bg-secondary cursor-pointer duration-200;
+  }
+  .menu_box {
+    @apply bg-primary h-[250px] mx-4 absolute top-[100px] left-0 right-0 z-10 rounded-xl;
+  }
+  .list-style {
+    @apply bg-secondary text-light hover:bg-light cursor-pointer hover:text-secondary rounded-lg duration-200 py-2;
+  }
+  .normal-style {
+    @apply text-dark dark:text-light;
+  }
+  .text-style {
+    @apply text-primary_glow font-bold text-lg drop-shadow-[0_0_20px_rgba(25,114,120,1)];
+  }
+  .btn_main {
+    @apply w-full  py-2 px-4 bg-primary_glow hover:bg-primary text-light rounded-lg duration-200;
+  }
+  .icon_style {
+    @apply bg-primary_glow hover:bg-primary hover:scale-105 shadow-[0_0_20px_rgba(25,114,120,1)] w-10 h-10 p-2 duration-200 rounded-lg;
+  }
+  .box_holder {
+    @apply bg-box rounded-xl text-light w-full md:max-w-[350px] flex flex-col border-none hover:ring-2 hover:shadow-[0_0_20px_rgba(25,114,120,1)] ring-primary duration-200 text-center justify-center gap-3;
+  }
+  .box_btn {
+    @apply border-2 border-primary py-2 px-2 rounded-lg text-sm text-light;
+  }
+  .input_style {
+    @apply w-full py-2 px-8 bg-box outline-none border-none ring-1 focus:ring-2 ring-primary duration-200 placeholder:text-gray-400 text-light rounded-md;
+  }
+  .message_input_style {
+    @apply w-full py-1 px-8 bg-box outline-none border-none ring-1 focus:ring-2 ring-primary duration-200 placeholder:text-gray-400 text-light rounded-md;
+  }
+}
