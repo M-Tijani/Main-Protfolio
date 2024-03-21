@@ -18,43 +18,43 @@ export default function Skills() {
           </a>
           <h1>Javascript</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://git-scm.com/" target="new">
             <FaGitAlt className="icon_style text-light" size={25} />
           </a>
           <h1>Git</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://github.com/" target="new">
             <FaGithub className="icon_style text-light" size={25} />
           </a>
           <h1>Github</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://react.dev/" target="new">
             <RiReactjsFill className="icon_style text-light" size={25} />
           </a>
           <h1>React JS</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://nodejs.org/en" target="new">
             <FaNodeJs className="icon_style text-light" size={25} />
           </a>
           <h1>Node JS</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://tailwindcss.com" target="new">
             <SiTailwindcss className="icon_style text-light" size={25} />
           </a>
-          <h1>Tailwind css</h1>
+          <h1>Tailwind</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://getbootstrap.com/" target="new">
             <FaBootstrap className="icon_style text-light" size={25} />
           </a>
           <h1>Bootstrap</h1>
         </div>
-        <div className="flex items-center justify-start gap-2">
+        <div className="Tech-Icons">
           <a href="https://www.mongodb.com/" target="new">
             <SiMongodb className="icon_style text-light" size={25} />
           </a>

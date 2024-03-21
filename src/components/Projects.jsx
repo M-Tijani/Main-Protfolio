@@ -37,7 +37,7 @@ export default function Projects() {
               <span className="box_btn">React js</span>
               <span className="box_btn">Node js</span>
               <span className="box_btn">Typescripts</span>
-              <span className="box_btn">Tailwind css</span>
+              <span className="box_btn">Tailwind</span>
             </div>
           </div>
         </div>
