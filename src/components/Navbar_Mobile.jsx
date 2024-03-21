@@ -28,7 +28,7 @@ export default function Navbar_Mobile() {
     <>
       {navMode ? (
         <div>
-          <div className="Navbar container mx-auto max-w-[360px] md:max-w-[700px]">
+          <div className="Navbar container mx-auto max-w-[360px] sm:max-w-[400px] md:max-w-[700px]">
             <div>
               {logoMode ? (
                 <Link
@@ -131,7 +131,7 @@ export default function Navbar_Mobile() {
         </div>
       ) : (
         <div>
-          <div className="bg-light Navbar">
+          <div className="bg-light Navbar container mx-auto max-w-[360px] sm:max-w-[400px] md:max-w-[700px]">
             <div>
               {logoMode ? (
                 <Link
@@ -219,7 +219,6 @@ export default function Navbar_Mobile() {
                             offset={-100}
                             duration={500}
                             className="list-style"
-                            href=""
                           >
                             -Contact();
                           </Link>

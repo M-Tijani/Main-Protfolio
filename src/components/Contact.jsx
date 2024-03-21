@@ -33,6 +33,9 @@ export default function Contact() {
     }
   };
 
+  const [message, setMessage] = useState(
+    "hi there! I am interested in working together, feel free to reach out to me."
+  );
   return (
     <>
       <div id="contact" className="mt-10">
@@ -61,7 +64,7 @@ export default function Contact() {
                   type="text"
                   name="from_name"
                   className="input_style"
-                  placeholder="name"
+                  placeholder="Example: Mahdi Tij....."
                 />
               </div>
             </div>
@@ -80,7 +83,7 @@ export default function Contact() {
                   required
                   name="from_email"
                   className="input_style"
-                  placeholder="Email"
+                  placeholder="Example: example@email.com"
                 />
               </div>
             </div>
@@ -97,7 +100,7 @@ export default function Contact() {
                 <textarea
                   className="message_input_style"
                   required
-                  placeholder="Message"
+                  placeholder={message}
                   name="message"
                   rows="10"
                 ></textarea>

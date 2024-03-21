@@ -12,19 +12,22 @@
     @apply w-[180px] cursor-pointer;
   }
   .Navbar {
-    @apply bg-dark w-full h-[60px] mt-4  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex items-center justify-between px-4 rounded-xl;
+    @apply bg-dark w-full h-[60px] mt-4  shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex items-center justify-between px-4 rounded-xl duration-200;
   }
   .Navbar-Menu {
     @apply w-[46px] h-[45px] flex items-center justify-center rounded-full bg-primary hover:bg-secondary cursor-pointer duration-200;
   }
   .menu_box {
-    @apply bg-primary h-[250px] mx-4 absolute top-[100px] left-0 right-0 z-10 rounded-xl;
+    @apply bg-primary  max-w-[500px] h-[250px] mx-4 absolute top-[100px] left-[200px] right-0 z-10 rounded-xl;
   }
   .list-style {
     @apply bg-secondary text-light hover:bg-light cursor-pointer hover:text-secondary rounded-lg duration-200 py-2;
   }
   .normal-style {
     @apply text-dark dark:text-light;
+  }
+  .link_style {
+    @apply underline text-primary_glow hover:text-primary cursor-pointer;
   }
   .text-style {
     @apply text-primary_glow font-bold text-lg drop-shadow-[0_0_20px_rgba(25,114,120,1)];
@@ -46,5 +49,23 @@
   }
   .message_input_style {
     @apply w-full py-1 px-8 bg-box outline-none border-none ring-1 focus:ring-2 ring-primary duration-200 placeholder:text-gray-400 text-light rounded-md;
+  }
+  .Navbar_PC {
+    @apply bg-dark w-full h-[75px] mt-4 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex items-center justify-between px-4 rounded-xl duration-200;
+  }
+  .Navbar_PC_Menu {
+    @apply w-[500px] h-[50px] flex items-center gap-6 justify-center rounded-full bg-primary;
+  }
+  .Navbar_PC_Menu_item {
+    @apply text-light hover:text-dark font-semibold cursor-pointer duration-200;
+  }
+  .Oracle-Position-left {
+    @apply absolute top-[70px] left-[12px]  cursor-pointer z-20;
+  }
+  .Oracle-Position-right {
+    @apply absolute top-[70px] right-[12px] cursor-pointer z-20;
+  }
+  .Oracle {
+    @apply w-8 h-8 bg-primary rounded-full flex items-center justify-center text-light;
   }
 }

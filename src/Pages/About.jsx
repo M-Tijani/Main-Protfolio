@@ -1,8 +1,6 @@
 import useTextHighlighter from "../hooks/useTextHighLighter";
-import { useRef, useEffect, useState } from "react";
-import Skills from "./Skills";
-// Routes Link
-import { NavLink } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import Skills from "../components/Skills";
 
 export default function About() {
   const textref = useRef(null);
@@ -15,10 +13,7 @@ export default function About() {
 
   return (
     <>
-      <div id="about" className="flex flex-col gap-3">
-        <h1 className="normal-style font-bold text-xl lg:text-2xl mb-4">
-          .About(“<span className="text-style lg:text-xl">me</span>”)
-        </h1>
+      <section>
         <div
           ref={textref}
           className="normal-style flex flex-col gap-4 text-justify"
@@ -70,11 +65,11 @@ export default function About() {
           </p>
           <p>
             I primarily use the following technologies, tools and libraries, but
-            always open to pick up more:{" "}
+            always open to pick up more:
           </p>
           <Skills />
         </div>
-      </div>
+      </section>
     </>
   );
 }

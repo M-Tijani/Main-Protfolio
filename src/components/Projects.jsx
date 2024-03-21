@@ -1,7 +1,9 @@
+"use client";
 // Icons
 import { FaGithub } from "react-icons/fa6";
 import { Globe } from "lucide-react";
-
+// Slider
+import Slider from "./Slider";
 export default function Projects() {
   return (
     <>
@@ -11,7 +13,7 @@ export default function Projects() {
         </h1>
 
         <div className="flex items-center  gap-2">
-          <div className="box_holder py-3 px-3">
+          <div className="box_holder py-4 px-6">
             <div className="flex items-center justify-between ">
               <h1>Tubeload</h1>
               <div className="flex items-center justify-center gap-2">
@@ -30,6 +32,7 @@ export default function Projects() {
               It’s platform for downloading videos from social media platforms
               like, Instagram, Facebook, Twitter, YouTube
             </p>
+            <Slider />
             <div className="grid grid-cols-2 gap-2">
               <span className="box_btn">React js</span>
               <span className="box_btn">Node js</span>

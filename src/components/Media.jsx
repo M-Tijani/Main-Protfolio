@@ -9,7 +9,7 @@ export default function Media() {
   return (
     <>
       <div>
-        <div className="fixed bottom-6 left-[20px]">
+        <div className="fixed bottom-6 left-[20px] md:left-[20px] lg:left-[20px] xl:left-[150px] duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <div className="relative flex flex-col items-center justify-center gap-[115px]">
             <h1 className="absolute bottom-[215px] -rotate-90 text-dark dark:text-light">
               {text}
@@ -19,7 +19,7 @@ export default function Media() {
         </div>
       </div>
       <div>
-        <div className="fixed bottom-6 right-[10px]">
+        <div className="fixed bottom-6 right-[10px] md:right-[20px] lg:right-[20px] xl:right-[150px] duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110">
           <div className="flex flex-col items-center justify-center gap-[20px]">
             <div className="flex flex-col gap-5 items-center justify-center text-dark dark:text-light">
               <a href="https://twitter.com/mtijani2274450" target="new">
