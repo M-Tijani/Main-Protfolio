@@ -7,10 +7,14 @@ import { Send } from "lucide-react";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 // Env Config
+
+// testing toast
+// import toast, { Toaster } from "react-hot-toast";
 export default function Contact() {
-  const [emty1, setEmty1] = useState("");
-  const [emty2, setEmty2] = useState("");
-  const [emty3, setEmty3] = useState("");
+  // const notify = () => toast("Here is your toast.");
+
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
 
   const form = useRef();
   const sendEmail = (e) => {
@@ -20,13 +24,22 @@ export default function Contact() {
       emailjs
         .sendForm("service_t5dtv24", "template_e05099n", form.current, {
           publicKey: "1054Y9g89yvnISoqM",
+          // ,
         })
         .then(
           () => {
-            console.log("SUCCESS!");
+            // console.log("SUCCESS!");
+            setSuccess("Message Sent Successfully");
+            setTimeout(() => {
+              setSuccess("");
+            }, 3000);
           },
           (error) => {
-            console.log("FAILED...", error.text);
+            // console.log("FAILED...", error.text);
+            setError("Message Sent Failed");
+            setTimeout(() => {
+              setError("");
+            }, 3000);
           }
         );
       form.current.reset();
@@ -43,6 +56,8 @@ export default function Contact() {
           .Contact(“<span className="text-style">me</span>”)
         </h1>
         <div className="bg-box w-full  rounded-lg">
+          {/* <button onClick={notify}>Make me a toast</button>
+          <Toaster /> */}
           <form
             ref={form}
             onSubmit={sendEmail}
@@ -105,7 +120,7 @@ export default function Contact() {
                   rows="10"
                 ></textarea>
 
-                <div className="relative mt-4">
+                <div className="relative flex flex-col items-center justify-center gap-4 mt-4">
                   <button
                     type="submit"
                     value="Send"
@@ -114,6 +129,8 @@ export default function Contact() {
                     <Send />
                     <h1>SEND</h1>
                   </button>
+                  {success && <p className="message-success">{success}</p>}
+                  {error && <p className="message-error">{error}</p>}
                 </div>
               </div>
             </div>

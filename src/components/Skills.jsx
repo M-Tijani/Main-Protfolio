@@ -11,25 +11,25 @@ import { SiMongodb } from "react-icons/si";
 export default function Skills() {
   return (
     <>
-      <section className="grid grid-cols-2 items-start justify-start gap-4 md:grid md:grid-cols-3 md:gap-4">
+      <section className="grid grid-cols-1 items-start justify-start gap-4 md:grid md:grid-cols-3 md:gap-4">
         <div className="flex items-center justify-start gap-2">
           <a href="https://www.javascript.com/" target="new">
             <IoLogoJavascript className="icon_style text-light" size={25} />
           </a>
           <h1>Javascript</h1>
         </div>
-        <div className="Tech-Icons">
+        {/* <div className="Tech-Icons">
           <a href="https://git-scm.com/" target="new">
             <FaGitAlt className="icon_style text-light" size={25} />
           </a>
           <h1>Git</h1>
-        </div>
-        <div className="Tech-Icons">
+        </div> */}
+        {/* <div className="Tech-Icons">
           <a href="https://github.com/" target="new">
             <FaGithub className="icon_style text-light" size={25} />
           </a>
           <h1>Github</h1>
-        </div>
+        </div> */}
         <div className="Tech-Icons">
           <a href="https://react.dev/" target="new">
             <RiReactjsFill className="icon_style text-light" size={25} />
@@ -40,20 +40,20 @@ export default function Skills() {
           <a href="https://nodejs.org/en" target="new">
             <FaNodeJs className="icon_style text-light" size={25} />
           </a>
-          <h1>Node JS</h1>
+          <h1>Express JS</h1>
         </div>
         <div className="Tech-Icons">
           <a href="https://tailwindcss.com" target="new">
             <SiTailwindcss className="icon_style text-light" size={25} />
           </a>
-          <h1>Tailwind</h1>
+          <h1>Tailwind CSS</h1>
         </div>
-        <div className="Tech-Icons">
+        {/* <div className="Tech-Icons">
           <a href="https://getbootstrap.com/" target="new">
             <FaBootstrap className="icon_style text-light" size={25} />
           </a>
           <h1>Bootstrap</h1>
-        </div>
+        </div> */}
         <div className="Tech-Icons">
           <a href="https://www.mongodb.com/" target="new">
             <SiMongodb className="icon_style text-light" size={25} />

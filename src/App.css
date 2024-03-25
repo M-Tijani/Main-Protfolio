@@ -71,4 +71,10 @@
   .Tech-Icons {
     @apply flex items-center justify-start gap-2 text-sm md:text-base;
   }
+  .message-success {
+    @apply text-light bg-primary w-full py-2 px-4 rounded-lg text-center max-w-[300px];
+  }
+  .message-error {
+    @apply text-light bg-red-600 w-full py-2 px-4 rounded-lg text-center max-w-[300px];
+  }
 }
