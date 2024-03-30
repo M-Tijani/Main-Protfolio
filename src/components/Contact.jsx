@@ -52,8 +52,8 @@ export default function Contact() {
   return (
     <>
       <div id="contact" className="mt-10">
-        <h1 className="normal-style font-bold text-xl mb-4">
-          .Contact(“<span className="text-style">me</span>”)
+        <h1 className="text-title mb-4">
+          .Contact(“<span className="sub-title">me</span>”)
         </h1>
         <div className="bg-box w-full  rounded-lg">
           {/* <button onClick={notify}>Make me a toast</button>

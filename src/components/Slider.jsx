@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import { motion } from "framer-motion";
 import { useSwiper } from "swiper/react";
-// Images
-import Img1 from "../assets/1.jpg";
-import Img2 from "../assets/2.jpg";
+// // Images
+// import Img1 from "../assets/1.jpg";
+// import Img2 from "../assets/2.jpg";
 // Icons
 import { ArrowBigLeftDash } from "lucide-react";
 
-function ProjectsCarousel() {
+function ProjectsCarousel(props) {
   return (
     <>
       <section className="relative">
@@ -37,11 +37,12 @@ function ProjectsCarousel() {
           className="relative overflow-hidden"
         >
           <SwiperSlide>
-            <motion.img whileHover={{ scale: 1.1 }} src={Img1} alt="" />
+            <motion.img whileHover={{ scale: 1.1 }} src={props.image1} alt="" />
           </SwiperSlide>
           <SwiperSlide>
-            <motion.img whileHover={{ scale: 1.1 }} src={Img2} alt="" />
+            <motion.img whileHover={{ scale: 1.1 }} src={props.image2} alt="" />
           </SwiperSlide>
+
           <Controls />
         </Swiper>
       </section>

@@ -77,4 +77,10 @@
   .message-error {
     @apply text-light bg-red-600 w-full py-2 px-4 rounded-lg text-center max-w-[300px];
   }
+  .text-title {
+    @apply normal-style font-bold text-2xl lg:text-3xl;
+  }
+  .sub-title {
+    @apply text-style text-xl lg:text-2xl;
+  }
 }

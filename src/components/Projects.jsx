@@ -1,46 +1,38 @@
 "use client";
-// Icons
-import { FaGithub } from "react-icons/fa6";
-import { Globe } from "lucide-react";
-// Slider
-import Slider from "./Slider";
+// Components
+import Card from "./props_components/Card";
+// Hooks
+import { useState } from "react";
+
+// Images
+import Img1 from "../assets/1.jpg";
+import Img2 from "../assets/2.jpg";
 export default function Projects() {
+  const [description, setDescription] = useState(
+    "It’s platform for downloading videos from social media platforms like, Instagram, Facebook, Twitter, YouTube"
+  );
+  const [tubeload, setTubeload] = useState([
+    "React js",
+    "Node js",
+    "Typescript",
+    "Tailwind",
+  ]);
   return (
     <>
       <div id="projects" className="mt-10">
-        <h1 className="normal-style font-bold text-xl mb-4">
-          .Projects(“<span className="text-style">i made</span>”)
+        <h1 className="text-title mb-4">
+          .Projects(“<span className="sub-title">i made</span>”)
         </h1>
 
-        <div className="flex items-center  gap-2">
-          <div className="box_holder py-4 px-6">
-            <div className="flex items-center justify-between ">
-              <h1>Tubeload</h1>
-              <div className="flex items-center justify-center gap-2">
-                <a
-                  href="https://github.com/M-Tijani/Youtube_Downloader"
-                  target="new"
-                >
-                  <FaGithub size={20} />
-                </a>
-                <a href="https://jazzy-llama-a2f52f.netlify.app/" target="new">
-                  <Globe size={20} />
-                </a>
-              </div>
-            </div>
-            <p className="text-sm text-justify">
-              It’s platform for downloading videos from social media platforms
-              like, Instagram, Facebook, Twitter, YouTube
-            </p>
-            <Slider />
-            <div className="grid grid-cols-2 gap-2">
-              <span className="box_btn">React js</span>
-              <span className="box_btn">Node js</span>
-              <span className="box_btn">Typescripts</span>
-              <span className="box_btn">Tailwind</span>
-            </div>
-          </div>
-        </div>
+        <Card
+          title="Tubeload"
+          description={description}
+          image1={Img1}
+          image2={Img2}
+          tubeload={tubeload}
+          link_git="https://github.com/M-Tijani/Youtube_Downloader"
+          link_web="https://jazzy-llama-a2f52f.netlify.app/"
+        />
       </div>
     </>
   );

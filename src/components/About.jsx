@@ -16,8 +16,8 @@ export default function About() {
   return (
     <>
       <div id="about" className="flex flex-col gap-3">
-        <h1 className="normal-style font-bold text-xl lg:text-2xl mb-4">
-          .About(“<span className="text-style lg:text-xl">me</span>”)
+        <h1 className="text-title mb-4">
+          .About(“<span className="sub-title">me</span>”)
         </h1>
         <div
           ref={textref}
